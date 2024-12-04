@@ -1,0 +1,9 @@
+node_modules
+.env
+/dist
+/tmp
+/out-tsc
+postgres-data
+.DS_Store
+initProject.sh
+
