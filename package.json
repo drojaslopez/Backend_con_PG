@@ -15,7 +15,6 @@
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22.10.1",
     "@types/pg": "^8.11.10",
-    "@types/winston": "^2.4.4",
     "dotenv": "^16.4.7",
     "nodemon": "^3.1.7",
     "pkgroll": "^2.5.1",
