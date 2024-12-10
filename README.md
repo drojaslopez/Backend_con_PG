@@ -35,20 +35,26 @@ npm i
 
 npm run dev
 ````
+
 ## Evidencia del proyecto
+
 Metodo Get para obtener todo los usuarios
+
 ![Get Users](./images/get%20users.png)
 
 
 Metodo para registrar nuevo usuario
+
 ![Post Users](./images/post%20user.png)
 
 Metodo para actualizar usuario
+
 ![User Update](./images/userput.png)
 
 ![Put Users](./images/put%20user.png)
 
 Metodo para eliminar usuario
+
 ![Delete Users](./images/delete%20user.png)
 
 ![Get User Final](./images/userFinal.png)
