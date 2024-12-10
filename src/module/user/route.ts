@@ -19,6 +19,6 @@ route.post("/", userController.createUser);
 route.delete("/:id", userController.deleteUser);
 
 // actualizar un usuario por id
-route.put("/:id", userController.updateUser);
+route.put("/", userController.updateUser);
 
 export default route;
