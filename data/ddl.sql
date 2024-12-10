@@ -10,3 +10,10 @@ CREATE TABLE USERS (
     profile VARCHAR(20)
 );
 
+INSERT INTO USERS
+(email, password, fullName, profile)
+VALUES
+('test1@test.com', '1234', 'Test User 1', 'Administrador');
+
+
+
