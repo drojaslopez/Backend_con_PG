@@ -1,14 +1,30 @@
 # hito_2_Backend_Node_Express
 ## Daniel_Rojas
 
-///[![Build Status]()](https://github.com/drojaslopez/hito_2_Backend_Node_Express)
 
 docker-compose up -d
 
-npm run dev
+docker ps
 
-docker exec -it fbf0b99a5e30 bash
+docker exec -it [CONTAINER ID] bash
+
+
+Ejemplo 
+```cmd
+docker ps
+CONTAINER ID   IMAGE             COMMAND                  CREATED        STATUS             PORTS                    NAMES
+987abc3463d8   postgres:latest   "docker-entrypoint.s…"   13 hours ago   Up About an hour   0.0.0.0:5434->5432/tcp   postgreshito2
+
+docker exec -it 987abc3463d8 bash 
 
 psql -U postgres -d dbhito2
+````
 
-psql -h <host> -p <port> -U <username> -d <database>
+cargar script con creacion y carga de datos
+
+
+
+Ejecutar 
+
+npm run dev
+

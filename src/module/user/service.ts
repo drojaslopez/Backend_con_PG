@@ -49,7 +49,6 @@ const updateUser = async (
   if (!user) {
     throw new Error("User does not exists");
   }
-
   const salt = await bcrypt.genSalt(10);
   const passwordHashed = await bcrypt.hash(password, salt);
 

@@ -6,7 +6,6 @@ const route = Router();
 //route.use(verifyToken)
 
 // leer los usuarios
-//route.get("/",  userController.getUsers);
 route.get("/", userController.getUsers);
 
 // leer un único usuario por id
@@ -19,6 +18,6 @@ route.post("/", userController.createUser);
 route.delete("/:id", userController.deleteUser);
 
 // actualizar un usuario por id
-route.put("/", userController.updateUser);
+route.put("/:id", userController.updateUser);
 
 export default route;

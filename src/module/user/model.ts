@@ -1,5 +1,6 @@
 import { User } from "./interfaces";
 import { pool } from "../../database/db";
+import e from "express";
 
 const findAll = async () => {
 
@@ -39,17 +40,17 @@ const create = async (email: string, password: string, fullName: string, profile
 
 
 const update = async (email: string, password: string, fullName: string, profile: string, id: string) => {
+  
   const query = {
     text: `
-    UPDATE SET email=$1, password = $2, fullName = $3, profile = $4
+    UPDATE USERS
+    SET email = $1, password = $2, fullName = $3, profile = $4
     WHERE id = $5
     RETURNING *
     `,
     values: [email, password, fullName, profile, id],
   };
-
   const { rows } = await pool.query(query);
-
   return rows[0] as User;
 };
 
